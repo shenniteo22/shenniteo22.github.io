@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>GEOG5015_assignment-for test2</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Singapore Tourist Spot</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js'>
+  </script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js'></script>
+
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id='map'></div>
+  <!-- Button -->
+  <button id="see-list">
+    See Tourist Attractions
+  </button>
+  <!-- Main sidebar (for attraction details) -->
+  <div id="main-sidebar"></div>
+
+  <!-- LIST SIDEBAR -->
+  <div id="list-sidebar">
+
+    <h2>Admission</h2>
+
+    <div id="filters">
+      <label>
+        <input type="radio" name="toggle" value="all" checked>
+        All
+      </label><br>
+
+      <label>
+        <input type="radio" name="toggle" value="FREE">
+        Free
+      </label><br>
+
+      <label>
+        <input type="radio" name="toggle" value="TICKETED">
+        Ticketed
+      </label>
+    </div>
+
+    <hr>
+
+    <div id="listing-container"></div>
+  </div>
+
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
